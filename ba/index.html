@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Wheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            background-color: black;
+            padding: 40px 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .diet-button {
+            padding: 16px 32px;
+            border: none;
+            border-radius: 25px;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            min-width: 160px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .diet-button:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .no-restrictions {
+            padding: 20px 40px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 40px;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What Are You Cooking Today?</h1>
+    <div class="button-row">
+        <a href="wheel.html?diet=vegan" class="diet-button">Vegan</a>
+        <a href="wheel.html?diet=vegetarian" class="diet-button">Vegetarian</a>
+        <a href="wheel.html?diet=kosher" class="diet-button">Kosher</a>
+    </div>
+    <div class="button-row">
+        <a href="wheel.html?diet=glutenFree" class="diet-button">Gluten Free</a>
+        <a href="wheel.html?diet=halal" class="diet-button">Halal</a>
+    </div>
+    <div class="button-row">
+        <a href="wheel.html?diet=none" class="diet-button no-restrictions">No Restrictions</a>
+    </div>
+</body>
+</html> 
